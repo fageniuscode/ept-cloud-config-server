@@ -14,3 +14,7 @@ microservice:
           uri: http://ACCOUNT-SERVICE/api/account/wallets/saveWallet
       - endpoint:
           uri: http://ACCOUNT-SERVICE/api/account/interest-rates/all
+  auth-service:
+      endpoints:
+        endpoint:
+          uri: http://AUTH-SERVICE/api/auth/users
