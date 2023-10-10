@@ -1,0 +1,16 @@
+Eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    
+microservice:
+  account-service:
+    endpoints:
+      - endpoint:
+          uri: http://ACCOUNT-SERVICE/api/account/wallets/saveWallet
+      - endpoint:
+          uri: http://ACCOUNT-SERVICE/api/account/interest-rates/all
